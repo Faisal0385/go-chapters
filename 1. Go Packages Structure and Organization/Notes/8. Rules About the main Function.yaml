@@ -2,5 +2,5 @@
     There must be exactly one main function in the main package.
 
     If our project has multiple files within the main package:
-      - Ensure only one file contains the main function. Having more 
-        than one main function results in an error.
+      - Ensure only one file contains the main function. Having more than one main function 
+        results in an error.
