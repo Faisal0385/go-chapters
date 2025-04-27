@@ -1,0 +1,17 @@
+9. Development vs. Production:
+    
+  During development, we often use the go run command to execute our code:
+    Syntax: go run <filename>
+    Running in Development: go run main.go
+
+  For production, we typically use: go build
+    Another Command: go run --work .\main.go 
+    
+    This creates an executable file that can be distributed or run independently, 
+    even on systems without Go installed.
+      - On Windows, the output is firstapp.exe
+      - On Linux/Mac, the output is firstapp
+
+    Why use go build?
+    It ensures our application is compiled into a standalone binary that can run on any compatible system 
+    without requiring Go to be installed.

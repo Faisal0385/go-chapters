@@ -1,0 +1,7 @@
+6. Working with Multiple Files and Packages:
+    A single package can be split across multiple files.
+
+NOTE: 
+    In Go, all the source files (files ending with .go) located in a single directory are treated as 
+    part of the same package. For example, if we have a directory named utils with files like math.go, 
+    string.go, and date.go, all these files together form the utils package.

@@ -1,0 +1,6 @@
+2. Purpose of Packages in Go:
+    Organizing Code:
+      Helps structure code efficiently.
+
+    Code Sharing:
+      Enables importing and exporting features between files or packages.

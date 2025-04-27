@@ -1,0 +1,7 @@
+3. Types of Packages:
+    Main Package:
+      The main package is essential when we're building an application to be executed as a standalone program.
+    User-Defined Packages:
+      Custom packages written by developers for specific projects.
+    Standard Library Packages:
+      Predefined, built-in packages that come with Go, such as fmt.

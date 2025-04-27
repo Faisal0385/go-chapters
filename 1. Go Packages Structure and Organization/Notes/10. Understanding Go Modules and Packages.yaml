@@ -1,0 +1,18 @@
+10. Understanding Go Modules and Packages:
+  
+  Why is Modules?
+    A larger concept that can include multiple packages, essentially the entire Go project. 
+    A Module is declared to manage dependencies, versioning and structure projects effectively, especially as they grow.
+  
+  Creating a Module:
+
+    Naming a Module:
+      The module needs a name or path (e.g., a GitHub URL for hosting or 
+      a placeholder name like example.com/first-app).
+    
+    Syntax: go mod init <module-name>
+    example: go mod init example.com/first-app
+    
+    
+    To initialize a project as a Module. This command creates a go.mod file, signaling Go that the directory
+    is part of a module.

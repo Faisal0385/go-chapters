@@ -1,0 +1,4 @@
+4. Purpose of the main Package:
+  In Go, we can theoretically use any name for a package. However, main has a special meaning.
+  The main package is essential when we're building an application to be executed as a standalone program.
+  It's where the execution of our code begins, and it must contain a main function, which serves as the entry point.

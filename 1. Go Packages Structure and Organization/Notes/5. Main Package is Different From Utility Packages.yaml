@@ -1,0 +1,4 @@
+5. main is Different From Utility Packages:
+      - Utility packages (e.g., fmt) are meant to provide functions or utilities. 
+      - These do not contain a main function.
+      - Such packages are imported into the main package to provide additional functionality.

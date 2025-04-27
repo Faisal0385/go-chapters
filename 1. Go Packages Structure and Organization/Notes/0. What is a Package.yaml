@@ -1,0 +1,9 @@
+What is a Package?
+    A collection of Go source files in a single directory is know as Package.
+
+NOTE: 
+    In Go, all the source files (files ending with .go) located in a single directory are treated as 
+    part of the same package. For example, if we have a directory named utils with files like math.go, 
+    string.go, and date.go, all these files together form the utils package.
+
+Package can be divide into Main Package or Non-main Package.
