@@ -1,0 +1,34 @@
+1. What is a Pointer?
+
+A pointer is a variable that stores the memory address of another variable.
+In Go, pointers are declared using the * symbol (e.g., *int is a pointer to an integer).
+Pointers are useful when you want to directly modify a variable’s value or avoid copying large data.
+
+2. Line-by-Line Breakdown
+
+Line 1: var p *int
+  This declares a variable p that is a pointer to an integer (*int).
+  Since you didn’t initialize p, it gets the zero value for a pointer in Go, which is nil.
+  nil means the pointer doesn’t point to any valid memory address yet.
+  At this point, p is a pointer variable, but it’s not pointing to any int value.
+Line 2: fmt.Println(&p)
+  The & operator gives the memory address of a variable.
+  Here, &p is the address of the pointer variable p itself, not the address it might point to.
+  Every variable in Go (including pointers) has its own memory address where it’s stored.
+  This line prints the memory address where the pointer p is stored (e.g., something like 0xc000014028, a hexadecimal address). The exact address will vary each time you run the program.
+Line 3: fmt.Println(p)
+  This prints the value of p, which is the address that p is pointing to.
+  Since p was declared but not assigned to point to any int variable, its value is nil.
+  In Go, nil is the zero value for pointers, meaning “no address” or “not pointing to anything.”
+  This line will output: <nil>.
+
+3. Key Concepts
+  Pointer variable vs. what it points to:
+  p is a pointer variable that can hold the address of an int.
+  &p is the address of p itself in memory.
+  p holds the address of the int it points to (or nil if uninitialized).
+  If you tried to access *p (the value at the address p points to), it would cause a panic because p is nil and doesn’t point to a valid memory location.
+  Why two different outputs?
+  &p gives the address of the pointer variable p (where p is stored in memory).
+  p gives the value of p, which is nil because it hasn’t been assigned to point to any int.
+  Example Output
